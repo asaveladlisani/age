@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeTracker - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>📊 Life Dashboard</h1>
+    <p>Track birthdays, ages, and life progress</p>
+  </header>
+
+  <section id="stats" class="card">
+    <p id="totalPeople"></p>
+    <p id="averageAge"></p>
+    <p id="nextBirthday"></p>
+    <p id="oldestAge"></p>
+    <p id="youngestAge"></p>
+    <p id="totalDaysLived"></p>
+  </section>
+
+  <section class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Birthday</th>
+          <th>Age</th>
+          <th>Days Lived</th>
+          <th>Next Birthday</th>
+          <th>Life Progress</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="peopleTable"></tbody>
+    </table>
+  </section>
+
+  <div class="link">
+    <a href="index.html">➕ Add Person</a>
+  </div>
+</div>
+
+<script src="https://unpkg.com/@js-temporal/polyfill/dist/index.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

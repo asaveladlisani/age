@@ -1,0 +1,60 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container { width: 90%; max-width: 900px; margin: 40px 0; }
+
+header { text-align: center; margin-bottom: 30px; }
+header h1 { font-size: 2.5rem; color: #3b82f6; margin-bottom: 10px; }
+header p { font-size: 1.1rem; color: #cbd5e1; }
+
+.card, .table-card {
+  background: #1e293b; padding: 20px; border-radius: 12px;
+  margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+input[type="text"], input[type="date"] {
+  width: calc(100% - 20px); padding: 12px; margin: 8px 0;
+  border-radius: 8px; border: none; outline: none; font-size: 1rem;
+}
+
+input:focus { box-shadow: 0 0 0 3px rgba(59,130,246,0.5); }
+
+button {
+  width: 100%; padding: 12px; background: #3b82f6;
+  border: none; color: white; font-size: 1rem;
+  border-radius: 8px; cursor: pointer; transition: background 0.3s;
+}
+button:hover { background: #2563eb; }
+
+.delete-btn {
+  width: auto; padding: 6px 12px; background: #ef4444;
+  font-size: 0.9rem; border-radius: 6px;
+}
+.delete-btn:hover { background: #dc2626; }
+
+.table-card { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; color: #fff; }
+th, td { padding: 12px; text-align: center; border-bottom: 1px solid #334155; }
+th { background: #3b82f6; color: #fff; position: sticky; top: 0; }
+tr:nth-child(even) { background: #1e293b; }
+tr:nth-child(odd) { background: #0f172a; }
+
+.link { text-align: center; margin: 15px 0; }
+.link a { color: #3b82f6; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+.link a:hover { color: #60a5fa; }
+
+#stats p { margin: 5px 0; font-size: 1rem; }
+
+.progress-bar { width: 100%; background: #ddd; border-radius: 8px; overflow: hidden; }
+.progress-fill {
+  background: #3b82f6; color: #fff; text-align: center;
+  padding: 2px 0; border-radius: 8px 0 0 8px; font-size: 0.8rem;
+  transition: width 1s ease-in-out;
+}

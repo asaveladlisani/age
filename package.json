@@ -1,0 +1,25 @@
+{
+  "name": "age-era",
+  "version": "1.0.0",
+  "description": "LifeTracker app for tracking people, birthdays, and life stats",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Asavela Dlisani",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  }
+}
